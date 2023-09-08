@@ -7,7 +7,7 @@ config = pulumi.Config()
 openai_api_key = config.require_secret("openai_api_key")
 git_repo = config.require("git_repo")
 
-
+# Create a Vercel Project
 project = vercel.Project("vercel-chatbot-project",
     framework="nextjs",
     git_repository=vercel.ProjectGitRepositoryArgs(
@@ -21,6 +21,7 @@ project = vercel.Project("vercel-chatbot-project",
     )]
 )
 
+# Create a Vercel Deployment
 deployment = vercel.Deployment("vercel-chatbot-deployment",
     project_id=project.id,
     production=True,
