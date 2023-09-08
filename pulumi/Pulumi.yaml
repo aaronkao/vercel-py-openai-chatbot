@@ -1,0 +1,7 @@
+name: vercel-py-openai-chatbot
+runtime:
+  name: python
+  options:
+    virtualenv: venv
+description: A Python Pulumi program for a Vercel OpenAI Chatbot
+

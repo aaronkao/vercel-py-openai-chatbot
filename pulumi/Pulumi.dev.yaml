@@ -1,0 +1,5 @@
+config:
+  vercel-py-openai-chatbot:openai_api_key:
+    secure: AAABABUB04MYezkXs13UnyoxZKSBNbpmKfzSh10cdWfl2eME7X36pB65OOua/YZSilARMkRAModquG+L29sEuP4lJOgnb874wuGvyLRuFbanJXk=
+  vercel:apiToken:
+    secure: AAABAALhyRDhsXThFyvCC2yX7SkHC64xyAxVuTfyZvt0rsDfZhuPKLWLw10GW+mxr/IikXIGcCA=
