@@ -1,4 +1,4 @@
-# Vercel AI SDK, Next.js, and OpenAI Chat Example
+# Pulumi Vercel OpenAI Chatbot Example
 
 This example shows how to use [Pulumi](https://pulumi.com) to deploy a OpenAI Chatbot running on Vercel. The chatbot uses the [Vercel AI SDK](https://sdk.vercel.ai/docs) with [Next.js](https://nextjs.org/) and [OpenAI](https://openai.com) to create a ChatGPT-like AI-powered streaming chat bot.
 
