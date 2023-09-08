@@ -1,21 +1,26 @@
 # Pulumi Vercel OpenAI Chatbot Example
 
-This example shows how to use [Pulumi](https://pulumi.com) to deploy a OpenAI Chatbot running on Vercel. The chatbot uses the [Vercel AI SDK](https://sdk.vercel.ai/docs) with [Next.js](https://nextjs.org/) and [OpenAI](https://openai.com) to create a ChatGPT-like AI-powered streaming chat bot.
+This example shows how to use [Pulumi](https://pulumi.com) to deploy a [OpenAI chatbot running on Vercel](https://github.com/vercel/ai/tree/main/examples/next-openai). The chatbot uses the [Vercel AI SDK](https://sdk.vercel.ai/docs) with [Next.js](https://nextjs.org/) and [OpenAI](https://openai.com) to create a ChatGPT-like AI-powered streaming chat bot.
 
-## Deploy your own
+[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/aaronkao/vercel-py-openai-chatbot/pulumi/)
 
-Deploy the example using [Pulumi](https://pulumi.com):
 
-[![Deploy](https://get.pulumi.com/new/button.svg)](https://app.pulumi.com/new?template=https://github.com/aaronkao/vercel-py-openai-chatbot/README.md)
+## Prerequisites
+
+- [Pulumi account and token](https://www.pulumi.com/docs/pulumi-cloud/accounts/#access-tokens)
+- [Pulumi CLI](https://www.pulumi.com/docs/cli/)
+- Vercel account and token
+- OpenAI account and key
+- GitHub integration installed in Vercel
 
 ## How to use
 
-Clone this repo into your own GitHub repo. 
+Clone or fork this repo into your own GitHub repo. 
 
-Enter the `pulumi` directory and initialize the Pulumi stack
+Enter the `vercel-py-openai-chatbot/pulumi` directory and initialize the Pulumi stack
 
 ```bash
-cd pulumi
+cd vercel-py-openai-chatbot/pulumi
 pulumi stack init
 ```
 
@@ -38,12 +43,15 @@ Execute the Pulumi program
 ```bash
 pulumi up
 ```
+To use your new chatbot, just follow the URL from the stack output in your browser. 
+
+If you’d like to tear down all of these resources and delete your stack, run `pulumi destroy -rf --remove`. Otherwise, have fun playing around with your new chatbot and add whatever you like! 🙂
+
 
 ## Learn More
 
-To learn more about OpenAI, Next.js, and the Vercel AI SDK take a look at the following resources:
+To learn more about Pulumi, OpenAI, and the Vercel AI SDK take a look at the following resources:
 
+- [Pulumi Documentation](https://www.pulumi.com/docs/)
 - [Vercel AI SDK docs](https://sdk.vercel.ai/docs)
-- [Vercel AI Playground](https://play.vercel.ai)
-- [OpenAI Documentation](https://platform.openai.com/docs) - learn about OpenAI features and API.
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [OpenAI Documentation](https://platform.openai.com/docs)
